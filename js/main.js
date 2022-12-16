@@ -95,6 +95,6 @@ searchBtn.onclick = () => {
 
     // Update the location of the specific IP
     function updateLocation(jsData) {
-            map.flyTo(new L.LatLng(jsData.location.lat, jsData.location.lng), 14, {duration: 2});
+            map.flyTo(new L.LatLng(jsData.location.lat, jsData.location.lng), 13, {duration: 2});
             marker.setLatLng([jsData.location.lat, jsData.location.lng]);
     }
