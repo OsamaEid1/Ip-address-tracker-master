@@ -32,18 +32,23 @@ req.onreadystatechange = function () {
             '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         }).addTo(map);
 
-        // Set Icon Location
-        var myIcon = L.icon({
-        iconUrl: "../images/icon-location.svg",
-        iconSize: [50, 54],
-        iconAnchor: [25, 27],
-        popupAnchor: [-3, -76]
-        });
-
-        // Put Icon Location to the map based on Clint's coordinates
-        marker = L.marker([jsData.location.lat, jsData.location.lng], {
-        icon: myIcon,
-        }).addTo(map);
+//         // Set Icon Location
+//         var myIcon = L.icon({
+//         iconUrl: "../images/icon-location.svg",
+//         iconSize: [50, 54],
+//         iconAnchor: [25, 27],
+//         popupAnchor: [-3, -76]
+//          });
+//
+//         // Put Icon Location to the map based on Clint's coordinates
+//         marker = L.marker([jsData.location.lat, jsData.location.lng], {
+//         icon: myIcon,
+//         }).addTo(map);
+        
+        
+//         Set Default Marker
+        marker = L.marker([jsData.location.lat, jsData.location.lng]).addTo(map);
+        
     }
 };
 
