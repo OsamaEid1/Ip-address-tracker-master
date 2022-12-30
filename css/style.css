@@ -9,6 +9,7 @@ body{
     margin: 0;
     font-family: 'Rubik', sans-serif;
     height: calc(100vh - 13.2px);
+    background-color: #F1F3DD;
 }
 ul {
     list-style: none;
@@ -142,7 +143,6 @@ ul {
 #map{
     height: 60%;
     z-index: 0;
-    background-color: var(--Dark-Gray);
 }
 .leaflet-top {
     bottom: 10px !important;
